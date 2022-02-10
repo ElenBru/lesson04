@@ -1,0 +1,10 @@
+def calculate():
+    try:
+        production = int(input("Введите количество отработанных часов: "))
+        rate = int(input("Введите ставку в час: "))
+        premium = int(input("Введите премию: "))
+        return production * rate + premium
+    except ValueError:
+        print("Вы ввели неверные данные")
+
+print(f"Заработная плата составит {calculate()} руб.")
