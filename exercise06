@@ -1,0 +1,22 @@
+from itertools import count
+x = int(input("Введите число: "))
+
+for el in count(x):
+    if el > x + 15:
+        break
+    else:
+        print(el)
+    el += 1
+
+
+from itertools import cycle
+
+value = input("Введите символы: ")
+
+с = 0
+for el in cycle(value):
+    if с > 10:
+        break
+    print(el)
+    с += 1
+    
